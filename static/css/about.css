@@ -1,0 +1,381 @@
+/* CSS FOR ABOUT PAGE */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+span{
+    color: red;
+}
+
+/* CSS ON THE HEADER */
+header{
+    display: flex;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#logo{
+    padding: 0px 19px;
+    padding-top: 1px;
+}
+
+#logo img{
+    height: 33px;
+    display: block;
+    margin: auto;
+    width: 46px;
+}
+
+.name{
+    font-size: 12px;
+    text-align: center;
+}
+
+.navbar ul{
+    display: flex;
+}
+.navbar ul li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+li{
+    padding: 0px 18px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.fa-home:before {
+    content: "\f015";
+    margin-right: 5px;
+}
+
+.fa-file-text-o:before {
+    content: "\f0f6";
+    margin-right: 6px;
+}
+
+.fa-gears:before, .fa-cogs:before {
+    content: "\f085";
+    margin-right: 5px;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    margin-right: 6px;
+}
+
+.navbar{
+    transition: all 0.9s ease-out 0.25s;
+}
+
+.navbar ul li a:hover,.navbar ul li a.active{
+    text-decoration: underline;
+    color: rgb(148, 148, 148);
+}
+
+.social{
+    padding: 0px 20px;
+    transition: all 0.9s ease-out 0.5s;
+}
+
+.social img{
+    height: 19px;
+    width: 25px;
+    margin-left: 6px;
+}
+
+.invert{
+    filter: invert(100%);
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    right: 4%;
+    top: 10px;
+    cursor: pointer;
+}
+
+.line{
+    width: 30px;
+    height: 3.8px;
+    margin: 5px 3px;
+    background-color: white;
+}
+
+/* section */
+section::before{
+    content: "";
+    background: url('../bg-media/about-bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+section{
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 57px;
+}
+.p-head{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+section ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+li{
+    padding: 10px 20px;
+}
+
+section ul li h2::before {
+    content: "\2022";  
+    color: white; 
+    display: inline-block; 
+    width: 1em;
+    margin-left: -0.5em;
+    font-weight: bold;
+    font-size:1.1rem;
+}
+
+section ul li h2{
+    line-height: 30px;
+}
+
+p {
+    padding-left: 10px;
+    font-size: 1.05rem;
+    padding-bottom: 25px;
+    padding-top: 7px;
+    text-align: justify;
+    padding-right: 7px;
+}
+
+/* footer */
+footer{
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+}
+.center{
+    text-align: center;
+}
+
+
+/* Responsiveness */
+@media only screen and (max-width: 932px){
+    header{
+        display: flex;
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 342px;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+
+    .navbar ul {
+        display: flex;
+        margin-top: 48px;
+        flex-direction: column;;
+    }
+
+    #logo {
+        padding: 6px 19px;
+        position: absolute;
+        top: 0;
+        left: 5px;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    li {
+        padding: 20px 18px;
+    }
+
+    .social {
+        padding: 10px 20px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav{
+        height: 57px;
+    }
+
+    .v-class{
+        opacity: 0;
+        transition: all 0.1s ease-in-out;
+    }
+    
+}
+
+@media only screen and (max-width: 340px){
+    #logo img {
+        height: 30px;
+        display: block;
+        margin: auto;
+        width: 40px;
+    }
+
+    .name {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .center {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .p-head {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 15px;
+        text-decoration: underline;
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and  (min-width: 1900px){
+    #logo img {
+        height: 60px;
+        display: block;
+        margin: auto;
+        width: 73px;
+    }
+
+    .name {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+
+    .social img {
+        height: 30px;
+        width: 40px;
+        margin-left: 18px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+
+    .center {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    section {
+        border: 1px solid white;
+        border-radius: 15px;
+        margin-top: 100px;
+    }
+
+    .p-head {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 26px;
+        text-decoration: underline;
+        padding-bottom: 33px;
+    }
+
+    section ul li h2 {
+        line-height: 35px;
+        font-size: 2.5rem;
+    }
+
+    section ul li{
+        padding: 40px 30px;
+    }
+
+    p {
+        padding-left: 10px;
+        font-size: 1.75rem;
+        padding-bottom: 10px;
+        padding-top: 7px;
+        text-align: justify;
+        padding-right: 7px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1320px){
+    section {
+        position: relative;
+        border: 1px solid white;
+        border-radius: 15px;
+        margin-top: 60px;
+    }
+
+    section ul li h2 {
+        line-height: 80px;
+    }
+
+    footer {
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        margin-top: 225px;
+    }
+}
+
+
+
+
+

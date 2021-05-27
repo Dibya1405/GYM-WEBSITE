@@ -1,0 +1,786 @@
+/* CSS FOR CONTACT PAGE */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+span{
+    color: red;
+}
+
+
+/* CSS ON THE HEADER */
+header{
+    display: flex;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#logo{
+    padding: 0px 19px;
+    padding-top: 1px;
+}
+
+#logo img{
+    height: 33px;
+    display: block;
+    margin: auto;
+    width: 46px;
+}
+
+.name{
+    font-size: 12px;
+    text-align: center;
+}
+
+.navbar ul{
+    display: flex;
+}
+.navbar ul li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+li{
+    padding: 0px 18px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.fa-home:before {
+    content: "\f015";
+    margin-right: 5px;
+}
+
+.fa-file-text-o:before {
+    content: "\f0f6";
+    margin-right: 6px;
+}
+
+.fa-gears:before, .fa-cogs:before {
+    content: "\f085";
+    margin-right: 5px;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    margin-right: 6px;
+}
+
+.navbar{
+    transition: all 0.9s ease-out 0.25s;
+}
+
+.navbar ul li a:hover,.navbar ul li a.active{
+    text-decoration: underline;
+    color: rgb(148, 148, 148);
+}
+
+.social{
+    padding: 0px 20px;
+    transition: all 0.9s ease-out 0.5s;
+}
+
+.social img{
+    height: 19px;
+    width: 25px;
+    margin-left: 6px;
+}
+
+.invert{
+    filter: invert(100%);
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    right: 4%;
+    top: 10px;
+    cursor: pointer;
+}
+
+.line{
+    width: 30px;
+    height: 3.8px;
+    margin: 5px 3px;
+    background-color: white;
+}
+
+
+/* main-body section */
+.main-section::before{
+    content: "";
+    background: url("../bg-media/contact.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 22px;
+    position: relative;
+}
+
+.mainbody{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px auto;
+}
+ 
+.mainbody h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 3.6rem;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-input{
+    padding: 6px 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid rgb(250, 218, 159);
+    color: white;
+    font-size: 17px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.form-input::placeholder{
+    color: white;
+}
+
+.myForm input{
+    height: 2.5rem;
+}
+.myForm textarea{
+    height: 10.5rem;
+}
+
+textarea::placeholder{
+    line-height: 150px;
+}
+
+.btn{
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    margin: 9.5px auto;
+    font-size: 17px;
+    width: 30%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    height: 2.8rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border-color: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* side-body section */
+.side-body{
+    margin: 0px 45px;
+    margin-top: 42px;
+    margin-bottom: 27px;
+    padding: 50px;
+    background-color:  rgb(22 22 22);
+}
+
+.side-body h2{
+    font-size: 1.4rem;
+    margin: 0 0 23px;
+}
+
+.side-body p{
+    font-size: 1.05rem;
+    padding: 5px 0px 22px;
+    padding-right: 10px;
+}
+
+.basic-info ul{
+    list-style: none;
+}
+
+.basic-info li{
+    margin-bottom: 15px;
+    font-size: 1.02rem;
+    letter-spacing: 1px;
+}
+
+.basic-info li a{
+    color: white;
+    text-decoration: none;
+}
+
+.basic-info  span{
+    margin-right: 12px;
+}
+
+.media a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 7px;
+    margin-top: 22px;
+    border: 1px solid transparent;
+}
+
+.media a:hover{
+    background-color: transparent;
+    border-color: white;
+}
+
+.media a span{
+    font-size: 1.1rem;
+}
+
+
+/* footer */
+footer{
+    background: rgb(9 9 9);
+    color: white;
+    padding: 10px;
+    font-family: 'Exo 2', sans-serif;
+}
+.center{
+    text-align: center;
+}
+
+
+/* responsiveness */
+@media only screen and (max-width: 932px){
+    header{
+        display: flex;
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 342px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+
+    .navbar ul {
+        display: flex;
+        margin-top: 48px;
+        flex-direction: column;;
+    }
+
+    #logo {
+        padding: 6px 19px;
+        position: absolute;
+        top: 0;
+        left: 5px;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    li {
+        padding: 20px 18px;
+    }
+
+    .social {
+        padding: 10px 20px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav{
+        height: 57px;
+    }
+
+    .v-class{
+        opacity: 0;
+        transition: all 0.1s ease-in-out;
+    }
+    
+}
+
+@media only screen and (max-width: 800px){
+    .mainbody h1 {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+        margin-top: 3.6rem;
+    }
+
+    .side-body h2 {
+        font-size: 1.1rem;
+        margin: 0 0 23px;
+    }
+
+    .side-body p {
+        font-size: 0.85rem;
+        padding: 5px 0px 22px;
+        padding-right: 10px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .basic-info li {
+        margin-bottom: 0px;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        padding: 10px 0px;
+    }
+    
+    .media a {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-color: white;
+        line-height: 16px;
+        text-align: center;
+        margin-right: 7px;
+        margin-top: 22px;
+        border: 1px solid transparent;
+    }
+
+    .media a span {
+        font-size: 0.75rem;
+    }
+
+    .center {
+        text-align: center;
+        font-size: 0.85rem;
+    }
+
+    .myForm input {
+        height: 2.37rem;
+    }
+
+    .form-input::placeholder{
+        color: white;
+        font-size: 0.9rem;
+    }
+
+    .form-input {
+        padding: 6px 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-radius: 10px;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid rgb(250, 218, 159);
+        color: white;
+        font-size: 16px;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    input[type=text]::placeholder{
+        position: relative;
+        bottom: 1.6px;
+    }
+
+    .btn {
+        border: 1px solid transparent;
+        outline: none;
+        cursor: pointer;
+        margin: 9.5px auto;
+        font-size: 14px;
+        width: 31%;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        height: 2.25rem;
+        font-family: 'Exo 2', sans-serif;
+    }  
+}
+
+@media only screen and (max-width: 450px){
+    .mainbody h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        margin-top: 3.6rem;
+    }
+
+    .side-body {
+        margin: 0px 45px;
+        margin-top: 42px;
+        margin-bottom: 27px;
+        padding: 40px;
+        background-color: rgb(22 22 22);
+    }
+
+    .side-body h2 {
+        font-size: 1rem;
+        margin: 0 0 23px;
+    }
+
+    .side-body p {
+        font-size: 0.75rem;
+        padding: 5px 0px 22px;
+        padding-right: 10px;
+        line-height: 19px;
+        text-align: justify;
+    }
+
+    .basic-info li {
+        margin-bottom: 0px;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        padding: 10px 0px;
+    }
+
+    .center {
+        text-align: center;
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 385px){
+    .mainbody h1 {
+        text-align: center;
+        font-size: 1.35rem;
+        margin-bottom: 2.5rem;
+        margin-top: 3.6rem;
+    }
+
+    .btn {
+        border: 1px solid transparent;
+        outline: none;
+        cursor: pointer;
+        margin: 9.5px auto;
+        font-size: 13px;
+        width: 32%;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        height: 2.25rem;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .side-body {
+        margin: 0px 35px;
+        margin-top: 42px;
+        margin-bottom: 27px;
+        padding: 40px;
+        background-color: rgb(22 22 22);
+    }
+}
+
+
+@media only screen and (max-width: 340px){
+    #logo img {
+        height: 30px;
+        display: block;
+        margin: auto;
+        width: 40px;
+    }
+
+    .name {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    .mainbody h1 {
+        text-align: center;
+        font-size: 1.22rem;
+        margin-bottom: 2.5rem;
+        margin-top: 3.6rem;
+    }
+
+    .form-input::placeholder{
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .form-input {
+        padding: 6px 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-radius: 10px;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid rgb(250, 218, 159);
+        color: white;
+        font-size: 14px;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .btn {
+        border: 1px solid transparent;
+        outline: none;
+        cursor: pointer;
+        margin: 9.5px auto;
+        font-size: 12px;
+        width: 33%;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        height: 2.25rem;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .side-body {
+        margin: 0px 30px;
+        margin-top: 42px;
+        margin-bottom: 27px;
+        padding: 30px;
+        background-color: rgb(22 22 22);
+    }
+
+    .side-body h2 {
+        font-size: 0.95rem;
+        margin: 0 0 23px;
+    }
+
+    .side-body p {
+        font-size: 0.65rem;
+        padding: 5px 0px 22px;
+        padding-right: 10px;
+        line-height: 17px;
+        text-align: justify;
+    }
+
+    .basic-info li {
+        margin-bottom: 0px;
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+        padding: 9.5px 0px;
+    }
+
+    .center {
+        text-align: center;
+        font-size: 0.65rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1320px){
+    .mainbody h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+        margin-top: 5.6rem;
+    }
+
+    .side-body {
+        margin: 0px 45px;
+        margin-top: 42px;
+        margin-bottom: 82px;
+        padding: 50px;
+        background-color: rgb(22 22 22);
+    }
+}
+
+@media only screen and (max-width: 290px){
+    .mainbody h1 {
+        text-align: center;
+        font-size: 1.15rem;
+        margin-bottom: 2.5rem;
+        margin-top: 3.6rem;
+    }
+
+    .side-body {
+        margin: 0px 20px;
+        margin-top: 42px;
+        margin-bottom: 27px;
+        padding: 30px;
+        background-color: rgb(22 22 22);
+    }
+
+    .center {
+        text-align: center;
+        font-size: 0.55rem;
+    }
+
+    .mainbody {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px auto;
+    }
+}
+
+@media only screen and  (min-width: 1900px){
+    #logo img {
+        height: 60px;
+        display: block;
+        margin: auto;
+        width: 73px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+
+    .name {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+
+    .social img {
+        height: 30px;
+        width: 40px;
+        margin-left: 18px;
+    }
+
+    .mainbody h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+        margin-top: 7rem;
+    }
+
+    .side-body h2 {
+        font-size: 2rem;
+        margin: 0px 0 35px;
+    }
+
+    .side-body p {
+        font-size: 1.35rem;
+        padding: 5px 0px 60px;
+        padding-right: 10px;
+        line-height: 27px;
+    }
+
+    .basic-info li {
+        margin-bottom: 35px;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .media a {
+        display: inline-block;
+        height: 42px;
+        width: 42px;
+        background-color: white;
+        line-height: 42px;
+        text-align: center;
+        margin-right: 7px;
+        margin-top: 22px;
+        border: 1px solid transparent;
+    }
+
+    .media a span {
+        font-size: 1.4rem;
+    }
+
+    .mainbody h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+        margin-top: 7rem;
+    }
+
+    .myForm input {
+        height: 4rem;
+    }
+    
+    .form-input {
+        padding: 6px 15px;
+        margin-bottom: 22px;
+        text-align: center;
+        border-radius: 10px;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid rgb(250, 218, 159);
+        color: white;
+        font-size: 22px;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .btn {
+        border: 1px solid transparent;
+        outline: none;
+        cursor: pointer;
+        margin: 9.5px auto;
+        font-size: 22px;
+        width: 30%;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        height: 3.5rem;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .center {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}

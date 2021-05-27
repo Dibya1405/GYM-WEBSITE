@@ -1,0 +1,1208 @@
+/* CSS FOR SERVICES PAGE */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+span{
+    color: red;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* CSS ON THE HEADER */
+header{
+    display: flex;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#logo{
+    padding: 0px 19px;
+    padding-top: 1px;
+}
+
+#logo img{
+    height: 33px;
+    display: block;
+    margin: auto;
+    width: 46px;
+}
+
+.name{
+    font-size: 12px;
+    text-align: center;
+}
+
+.navbar ul{
+    display: flex;
+}
+.navbar ul li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+li{
+    padding: 0px 18px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.fa-home:before {
+    content: "\f015";
+    margin-right: 5px;
+}
+
+.fa-file-text-o:before {
+    content: "\f0f6";
+    margin-right: 6px;
+}
+
+.fa-gears:before, .fa-cogs:before {
+    content: "\f085";
+    margin-right: 5px;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    margin-right: 6px;
+}
+
+.navbar{
+    transition: all 0.9s ease-out 0.25s;
+}
+
+.navbar ul li a:hover,.navbar ul li a.active{
+    text-decoration: underline;
+    color: rgb(148, 148, 148);
+}
+
+.social{
+    padding: 0px 20px;
+    transition: all 0.9s ease-out 0.5s;
+}
+
+.social img{
+    height: 19px;
+    width: 25px;
+    margin-left: 6px;
+}
+
+.invert{
+    filter: invert(100%);
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    right: 4%;
+    top: 10px;
+    cursor: pointer;
+}
+
+.line{
+    width: 30px;
+    height: 3.8px;
+    margin: 5px 3px;
+    background-color: white;
+}
+
+
+/* strat section */
+.start{
+    height: 100vh;
+    background-image: url('../bg-media/service-home.jpg');
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    position: relative;
+    width: 100vw;
+}
+
+.start .container{
+    display: flex;
+    max-width: 65vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.start .container h1{
+    color: white;
+    font-size: 52px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.start .scroll-down{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 25px;
+    height: 38px;
+    border: 1px solid white;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.start .scroll-down .fa{
+    color: white;
+    animation: scrolldown 0.9s ease infinite;
+}
+
+@keyframes scrolldown {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(16px);
+    }
+}
+
+/* page-one */
+#page-one{
+    padding: 150px 0px;
+    background-color: white;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content .box{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+
+.content img{
+    width: 100%;
+    vertical-align: top;
+}
+
+
+.content h3{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.content p{
+    font-size: 15px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.content .text{
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 27px 30px;
+}
+
+.content .text1{
+    background-color: rgb(205, 4, 4);
+    color: white;
+    text-align: center;
+    padding: 27px 30px;
+}
+
+
+/* exercise section */
+.exercise h2{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 32px 0px;
+}
+
+.exercise .para{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0 20% 8.5rem;
+    line-height: 22px;
+}
+
+.last-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.last-content .image{
+    margin: 0rem 11rem;
+    margin-top: 2.5rem;
+    margin-bottom: 8rem; 
+    overflow: visible;
+}
+
+.image img{
+    height: 22.7rem;
+    width: 19.2rem;
+}
+
+.last-text{
+    padding: 5.5rem 6rem;
+    text-align: justify;
+}
+
+.last-text h3{
+    font-size: 1.7rem;
+    padding: 16px 0px;
+    color: rgb(205, 4, 4);;
+}
+
+.last-text p{
+    font-size: 1.05rem;
+}
+
+.scroll-up{
+    position: relative;
+    bottom: 37px;
+    left: 50%;
+    width: 25px;
+    height: 38px;
+    border: 1px solid black;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #cd0404;
+}
+
+.scroll-up .fa{
+    color: white;
+    animation: scrollup 0.9s ease infinite;
+}
+
+@keyframes scrollup {
+    0%{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* footer */
+footer{
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    padding: 10px;
+}
+.center{
+    text-align: center;
+}
+
+
+/* Responsiveness */
+@media only screen and (max-width: 932px){
+    header{
+        display: flex;
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 342px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+
+    .navbar ul {
+        display: flex;
+        margin-top: 21px;
+        flex-direction: column;;
+    }
+
+    #logo {
+        padding: 6px 19px;
+        position: absolute;
+        top: 0;
+        left: 5px;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    li {
+        padding: 20px 18px;
+    }
+
+    .social {
+        padding: 10px 20px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav{
+        height: 57px;
+    }
+
+    .v-class{
+        opacity: 0;
+        transition: all 0.1s ease-in-out;
+    }
+    
+}
+
+@media only screen and (max-width: 1030px){
+    .start .container h1 {
+        color: white;
+        font-size: 2.8rem;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .start .container {
+        display: flex;
+        max-width: 660px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .content .box {
+        flex: 0 0 29%;
+        max-width: 29%;
+        margin: 0px 15px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .content img {
+        height: 230px;
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .last-content .image {
+        margin: 0rem 5.9rem;
+        margin-top: 2.5rem;
+        margin-bottom: 8rem;
+        overflow: visible;
+    }
+    
+    .last-text {
+        padding: 5.5rem 2.55rem;
+    }
+
+    .start {
+        height: 100vh;
+        background-image: url('../bg-media/service-home.jpg');
+        background-size: cover;
+        display: flex;
+        padding: 15px;
+        position: relative;
+        width: 100vw;
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .start {
+        height: 65.5vh;
+        background-image: url(../bg-media/service-home.jpg);
+        background-size: 97% 87%;
+        display: flex;
+        padding: 15px;
+        position: relative;
+        width: 100vw;
+        background-position: center;
+    }
+
+    .start .container h1 {
+        color: white;
+        font-size: 2.05rem;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .start .container {
+        display: flex;
+        max-width: 65vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    #page-one {
+        padding: 150px 0px;
+        background-color: white;
+        padding-bottom: 10px;
+    }
+
+    .content .box {
+        flex: 0 0 57%;
+        max-width: 57vw;
+        margin: 0px 15px;
+        margin-bottom: 110px;
+    }
+
+    .content img {
+        height: 310px;
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .exercise h2 {
+        font-size: 2.05rem;
+        text-align: center;
+        padding: 32px 0px;
+    }
+
+    .exercise .para {
+        font-size: 1.05rem;
+        text-align: center;
+        padding: 0 19% 8rem;
+        line-height: 20px;
+    }
+
+    .last-text h3 {
+        font-size: 1.45rem;
+        padding: 16px 0px;
+        padding-top: 25px;
+        color: rgb(205, 4, 4);
+    }
+
+    .last-text {
+        padding: 3rem 2rem;
+    }
+
+    .last-text p {
+        font-size: 1rem;
+    }
+
+    .image img {
+        height: 18rem;
+        width: 15.5rem;
+    }
+
+    .last-content .image {
+        margin: 0rem 2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 8rem;
+        overflow: visible;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .start .container h1 {
+        color: white;
+        font-size: 1.65rem;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .start {
+        height: 55vh;
+        background-image: url(../bg-media/service-home.jpg);
+        background-size: 100% 87%;
+        display: flex;
+        padding: 15px;
+        position: relative;
+        width: 100vw;
+        background-position: center;
+    }
+
+    .start .container {
+        display: flex;
+        max-width: 59vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .content img {
+        height: 245px;
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .exercise .para {
+        font-size: 1.01rem;
+        text-align: center;
+        padding: 0 19% 8rem;
+        line-height: 20px;
+    }
+
+    .last-text p {
+        font-size: 0.9rem;
+    }
+
+    .image img {
+        height: 16rem;
+        width: 14rem;
+    }
+
+    .last-text {
+        padding: 2rem 2rem;
+    }
+
+    .last-text h3 {
+        font-size: 1.2rem;
+        padding: 16px 0px;
+        padding-top: 5px;
+        color: rgb(205, 4, 4);
+    }
+
+    .last-content .image {
+        margin: 0rem 1rem;
+        margin-top: 2.5rem;
+        margin-bottom: 8rem;
+        overflow: visible;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .start {
+        height: 49vh;
+        background-image: url(../bg-media/service-home.jpg);
+        background-size: 112% 87%;
+        display: flex;
+        padding: 15px;
+        position: relative;
+        width: 100vw;
+        background-position: center;
+    }
+
+    .start .container h1 {
+        color: white;
+        font-size: 1.2rem;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .content .box {
+        flex: 0 0 80%;
+        max-width: 80vw;
+        margin: 0px 15px;
+        margin-bottom: 110px;
+    }
+
+    .content img {
+        height: 250px;
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .content h3 {
+        margin: 20px 0px;
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 13px;
+        line-height: 19px;
+        overflow: hidden;
+    }
+
+    .exercise h2 {
+        font-size: 1.45rem;
+        text-align: center;
+        padding: 25px 0px;
+    }
+
+    .exercise .para {
+        font-size: 0.85rem;
+        text-align: center;
+        padding: 0 15% 7rem;
+        line-height: 18px;
+    }
+
+    .last-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .last-content .image {
+        margin: 1rem 1rem;
+        overflow: visible;
+    }
+
+    .last-text {
+        padding: 2rem 2rem;
+        padding-bottom: 5.8rem;
+    }
+
+    .exercise h2 {
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 25px 0px;
+    }
+
+    .exercise .para {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0px 12% 5.5rem;
+        line-height: 16px;
+    }
+
+    footer {
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        padding: 10px;
+        font-size: 0.75rem;
+    }
+
+    .scroll-up {
+        position: relative;
+        bottom: 40px;
+        left: 48.35%;
+        width: 22px;
+        height: 35px;
+        border: 1px solid black;
+        display: block;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #cd0404;
+        margin-top: 60px;
+    }
+
+    .start .scroll-down {
+        position: absolute;
+        bottom: 25px;
+        left: 48.35%;
+        width: 22px;
+        height: 35px;
+        border: 1px solid white;
+        display: block;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    @keyframes scrolldown {
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }
+    
+        100%{
+            transform: translateY(13px);
+        }
+    }
+}
+
+@media only screen and (max-width: 385px){
+    .start {
+        height: 45vh;
+        background-image: url(../bg-media/service-home.jpg);
+        background-size: 112% 87%;
+        display: flex;
+        padding: 15px;
+        position: relative;
+        width: 100vw;
+        background-position: center;
+    }
+
+    .start .container h1 {
+        color: white;
+        font-size: 1.15rem;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .content img {
+        height: 227px;
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .last-text p {
+        font-size: 0.85rem;
+    }
+
+    .last-text h3 {
+        font-size: 1.15rem;
+        padding: 16px 0px;
+        padding-top: 5px;
+        color: rgb(205, 4, 4);
+    }
+
+    .image img {
+        height: 14rem;
+        width: 12rem;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    #logo img {
+        height: 30px;
+        display: block;
+        margin: auto;
+        width: 40px;
+    }
+
+    .name {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .start {
+        height: 42vh;
+        background-image: url(../bg-media/service-home.jpg);
+        background-size: 112% 87%;
+        display: flex;
+        padding: 15px;
+        position: relative;
+        width: 100vw;
+        background-position: center;
+    }
+
+    .start .container h1 {
+        color: white;
+        font-size: 1.02rem;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .start .container {
+        display: flex;
+        max-width: 56vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .start .scroll-down {
+        position: absolute;
+        bottom: 25px;
+        left: 48.35%;
+        width: 17px;
+        height: 30px;
+        border: 1px solid white;
+        display: block;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    @keyframes scrolldown {
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }
+    
+        100%{
+            transform: translateY(9px);
+        }
+    }
+
+    .content img {
+        height: 180px;
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .content .text1 {
+        background-color: rgb(205, 4, 4);
+        color: white;
+        text-align: center;
+        padding: 22px 20px;
+    }
+
+    .content .text {
+        background-color: rgb(205, 4, 4);
+        color: white;
+        text-align: center;
+        padding: 22px 20px;
+    }
+
+    .content h3 {
+        margin: 16px 0px;
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    .content p {
+        font-size: 12px;
+        line-height: 18px;
+        overflow: hidden;
+    }
+
+    .exercise h2 {
+        font-size: 1.15rem;
+        text-align: center;
+        padding: 15px 0px;
+    }
+
+    .exercise .para {
+        font-size: 0.7rem;
+        text-align: center;
+        padding: 0px 9% 5.5rem;
+        line-height: 15px;
+    }
+
+    .image img {
+        height: 12.55rem;
+        width: 10.55rem;
+    }
+
+    .last-text h3 {
+        font-size: 1.05rem;
+        padding: 16px 0px;
+        padding-top: 5px;
+        color: rgb(205, 4, 4);
+    }
+
+    .last-text p {
+        font-size: 0.75rem;
+        line-height: 20px;
+    }
+
+    .scroll-up {
+        position: relative;
+        bottom: 40px;
+        left: 48.35%;
+        width: 17px;
+        height: 30px;
+        border: 1px solid black;
+        display: block;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #cd0404;
+        margin-top: 60px;
+    }
+
+    @keyframes scrollup {
+        0%{
+            transform: translateY(10px);
+            opacity: 0;
+        }
+    
+        100%{
+            transform: translateY(0px);
+        }
+    }
+
+    footer {
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        padding: 7px;
+        font-size: 0.65rem;
+    }
+}
+
+@media only screen and (max-width: 290px){
+    .start {
+        height: 45vh;
+        background-image: url(../bg-media/service-home.jpg);
+        background-size: 112% 87%;
+        display: flex;
+        padding: 15px;
+        position: relative;
+        width: 100vw;
+        background-position: center;
+    }
+
+    .content img {
+        height: 165px;
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+@media only screen and  (min-width: 1900px){
+    #logo img {
+        height: 60px;
+        display: block;
+        margin: auto;
+        width: 73px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+
+    .name {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+
+    .social img {
+        height: 30px;
+        width: 40px;
+        margin-left: 18px;
+    }
+
+    .start .container {
+        display: flex;
+        max-width: 65vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .start .container h1 {
+        color: white;
+        font-size: 90px;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .start .scroll-down {
+        position: absolute;
+        bottom: 55px;
+        left: 50%;
+        width: 33px;
+        height: 50px;
+        border: 1px solid white;
+        display: block;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    @keyframes scrolldown {
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }
+    
+        100%{
+            transform: translateY(25px);
+        }
+    }
+    
+    .content h3 {
+        margin: 25px 0px;
+        font-size: 34px;
+    }
+
+    .content .text1 {
+        background-color: rgb(205, 4, 4);
+        color: white;
+        text-align: center;
+        padding: 36px 38px;
+    }
+
+    .content .text {
+        background-color: rgb(205, 4, 4);
+        color: white;
+        text-align: center;
+        padding: 36px 38px;
+    }
+
+    .content p {
+        font-size: 22px;
+        line-height: 38px;
+        overflow: hidden;
+    }
+
+    #page-one {
+        padding: 150px 0px;
+        background-color: white;
+        padding-bottom: 170px;
+    }
+
+    .exercise h2 {
+        font-size: 3.5rem;
+        text-align: center;
+        padding: 50px 0px;
+    }
+
+    .exercise .para {
+        font-size: 1.7rem;
+        text-align: center;
+        padding: 0 22% 12rem;
+        line-height: 42px;
+    }
+
+    .image img {
+        height: 32.7rem;
+        width: 29.2rem;
+    }
+
+    .last-content .image {
+        margin: 0rem 20rem;
+        margin-top: 4.5rem;
+        margin-bottom: 12rem;
+        overflow: visible;
+    }
+
+    .last-text h3 {
+        font-size: 3rem;
+        padding: 60px 0px;
+        color: rgb(205, 4, 4);
+    }
+
+    .last-text p {
+        font-size: 1.85rem;
+    }
+
+    .last-text {
+        padding: 8rem 7rem;
+        text-align: justify;
+    }
+
+    .scroll-up {
+        position: relative;
+        bottom: 40px;
+        left: 50%;
+        width: 33px;
+        height: 50px;
+        border: 1px solid black;
+        display: block;
+        border-radius: 15px;
+        text-align: center;
+        background-color: #cd0404;
+        margin-bottom: 15px;
+    }
+
+    @keyframes scrollup {
+        0%{
+            transform: translateY(27px);
+            opacity: 0;
+        }
+    
+        100%{
+            transform: translateY(0px);
+        }
+    }
+
+    .center {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1320px){
+    #logo img {
+        height: 40px;
+        display: block;
+        margin: auto;
+        width: 52px;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        margin-left: 30px;
+    }
+
+    li {
+        padding: 0px 10px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+
+    .name {
+        font-size: 17.55px;
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 102px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+
+    .social img {
+        height: 27px;
+        width: 37px;
+        margin-left: 10px;
+    }
+
+    .start {
+        height: 52vh;
+        background-image: url(../bg-media/service-home.jpg);
+        background-size: 97% 87%;
+        display: flex;
+        padding: 15px;
+        position: relative;
+        width: 100vw;
+        background-position: center;
+    }
+
+    .content h3 {
+        margin: 20px 0px;
+        font-size: 26px;
+    }
+
+    .exercise .para {
+        font-size: 1.15rem;
+        text-align: center;
+        padding: 0 20% 8.5rem;
+        line-height: 25px;
+    }
+
+    .center {
+        text-align: center;
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (device-aspect-ratio: 40/71){
+    .start {
+        height: 50vh;
+        background-image: url(../bg-media/service-home.jpg);
+        background-size: 112% 87%;
+        display: flex;
+        padding: 15px;
+        position: relative;
+        width: 100vw;
+        background-position: center;
+    }
+}

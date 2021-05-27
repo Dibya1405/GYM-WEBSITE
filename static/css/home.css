@@ -1,0 +1,1111 @@
+/* CSS FOR PAGE */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+span{
+    color: red;
+}
+
+/* CSS ON THE HEADER */
+header{
+    display: flex;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#logo{
+    padding: 0px 19px;
+    padding-top: 1px;
+}
+
+#logo img{
+    height: 33px;
+    display: block;
+    margin: auto;
+    width: 46px;
+}
+
+.name{
+    font-size: 12px;
+    text-align: center;
+}
+
+.navbar ul{
+    display: flex;
+}
+.navbar ul li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+li{
+    padding: 0px 18px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.fa-home:before {
+    content: "\f015";
+    margin-right: 5px;
+}
+
+.fa-file-text-o:before {
+    content: "\f0f6";
+    margin-right: 6px;
+}
+
+.fa-gears:before, .fa-cogs:before {
+    content: "\f085";
+    margin-right: 5px;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    margin-right: 6px;
+}
+
+.navbar{
+    transition: all 0.9s ease-out 0.25s;
+}
+
+.navbar ul li a:hover,.navbar ul li a.active{
+    text-decoration: underline;
+    color: rgb(148, 148, 148);
+}
+
+.social{
+    padding: 0px 20px;
+    transition: all 0.9s ease-out 0.5s;
+}
+
+.social img{
+    height: 19px;
+    width: 25px;
+    margin-left: 6px;
+}
+
+.invert{
+    filter: invert(100%);
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    right: 4%;
+    top: 10px;
+    cursor: pointer;
+}
+
+.line{
+    width: 30px;
+    height: 3.8px;
+    margin: 5px 3px;
+    background-color: white;
+}
+
+/* SECTION-1 */
+
+#section-body{
+    height: 100vh;
+    width: 100%;
+}
+video{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 0.22;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    padding: 15px;
+}
+
+.container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    width: 100%;
+}
+
+
+.text h1{
+    font-size: 2.85rem;
+    margin-bottom: 75px;
+}
+
+.text p{
+    font-size: 1.3rem;
+    width: 70%;
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 25px;
+    height: 38px;
+    border: 1px solid white;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.scroll-down .fa{
+    color: white;
+    animation: scrolldown 0.9s ease infinite;
+}
+
+@keyframes scrolldown {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(18px);
+    }
+}
+
+
+/* page-one section */
+
+#page-one{
+    background-color: white;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.image{
+    margin: 0rem 7rem;
+    margin-top: 5rem; 
+    margin-bottom: 2.6rem; 
+}
+
+.image img{
+    height: 38rem;
+    width: 26rem;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin: 4.9rem 5rem; 
+}
+
+.cards h1{
+    font-size: 2.5rem;
+    margin: 1.5rem 0rem;
+    color:  rgb(201 18 18);
+}
+
+.cards p{
+    font-size: 1.1rem;
+}
+
+.card1,.card2{
+    padding: 14px 20px;
+}
+
+.btn{
+    padding: 9px 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(201 18 18);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.btn:hover{
+    background-color: wheat;
+}
+
+
+/* photogallery section */
+.gallery{
+    background-color: white;
+    padding: 80px 0px;
+}
+
+.gallery h2{
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 28px 0px;
+} 
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.box img{
+    width: 100%;
+    filter: grayscale(1);
+    transition: filter 0.4s ease;
+}
+
+.box img:hover{
+    filter: grayscale(0);
+}
+
+
+/* subscription section */
+.subscription{
+    background-color: white;
+    padding: 80px 0px;
+}
+
+.subscription h2{
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 28px 0px;
+}
+
+.para{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0 20% 7rem;
+    line-height: 22px;
+}
+
+.last-content{
+    display: flex;
+    padding: 0px 160px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.last-card{
+    flex: 0 0 30%;
+    max-width: 30%;
+    background-color: #f0f0f0;
+}
+
+.last-card img{
+    height: 265px;
+    width: 100%;
+}
+
+.last-card .price{
+    background-color:  rgb(205, 4, 4);;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.last-card .last-text{
+    padding: 15px;
+    text-align: center;
+}
+
+.last-card .last-text h3{
+    font-size: 1.15rem;
+    padding: 0 0 20px;
+}
+
+.last-card .last-text p{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 0 0.2rem;
+}
+
+.last-card button{
+    padding: 6px 14px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #cd0404;
+    color: white;
+}
+
+.last-card button:hover{
+    border-color: black;
+    color: black;
+    background-color: transparent;
+}
+
+
+.scroll-up{
+    position: relative;
+    bottom: -45px;
+    left: 50%;
+    width: 25px;
+    height: 38px;
+    border: 1px solid black;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #cd0404;
+}
+
+.scroll-up .fa{
+    color: white;
+    animation: scrollup 0.9s ease infinite;
+}
+
+@keyframes scrollup {
+    0%{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+/* footer */
+footer{
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+}
+.center{
+    text-align: center;
+}
+
+
+
+
+/* responsiveness */
+
+@media only screen and (max-width: 1030px){
+    .image img {
+        height: 29.55rem;
+        width: 20.55rem;
+    }
+
+    .image {
+        margin: 0rem 3.4rem;
+        margin-top: 5rem;
+        margin-bottom: 2.6rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 2.7rem 2rem;
+    }
+
+    .text h1 {
+        font-size: 2.6rem;
+        margin-bottom: 75px;
+        padding: 0px 50px;
+    }
+
+    .text p {
+        font-size: 1.1rem;
+        width: 70%;
+    }
+
+    .para {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 25% 7rem;
+        line-height: 22px;
+    }
+
+    .last-content {
+        display: flex;
+        padding: 0px 80px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .last-card img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .last-card .price {
+        background-color: rgb(205, 4, 4);
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+}
+
+@media only screen and (max-width: 932px){
+    header{
+        display: flex;
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 342px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+
+    .navbar ul {
+        display: flex;
+        margin-top: 48px;
+        flex-direction: column;;
+    }
+
+    #logo {
+        padding: 6px 19px;
+        position: absolute;
+        top: 0;
+        left: 5px;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    li {
+        padding: 20px 18px;
+    }
+
+    .social {
+        padding: 10px 20px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav{
+        height: 57px;
+    }
+
+    .v-class{
+        opacity: 0;
+        transition: all 0.1s ease-in-out;
+    }
+    
+}
+
+@media only screen and (max-width: 790px){
+    .text h1 {
+        font-size: 2.2rem;
+        margin-bottom: 75px;
+        padding: 0px 50px;
+    }
+
+    .text p {
+        font-size: 1.01rem;
+        width: 70%;
+    }
+
+    .image img {
+        height: 24.55rem;
+        width: 16.55rem;
+    }
+
+    .image {
+        margin: 0rem 2rem;
+        margin-top: 5rem;
+        margin-bottom: 2.6rem;
+        margin-left: 32px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 2.7rem 0.7rem;
+    }
+
+    .card1, .card2 {
+        padding: 9px 5px;
+    }
+
+    .card2{
+        margin-left: -68.55%;
+        margin-top: 30%;
+    }
+
+    .cards h1 {
+        font-size: 2.05rem;
+        margin: 1.5rem 0rem;
+        color: rgb(201 18 18);
+    }
+
+    .cards p {
+        font-size: 0.9rem;
+    }
+
+    .gallery h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 28px 0px;
+    }
+
+    .subscription h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 28px 0px;
+    }
+
+    .para {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 0 15% 7rem;
+        line-height: 20px;
+    }
+
+    .last-content {
+        display: flex;
+        padding: 0px 34px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .last-card img {
+        height: 175px;
+        width: 100%;
+    }
+
+    .last-card .price {
+        background-color: rgb(205, 4, 4);
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .last-card .last-text p {
+        font-size: 0.85rem;
+        text-align: center;
+        padding: 0 0 0.2rem;
+    }
+
+    .last-card .last-text h3 {
+        font-size: 1.05rem;
+        padding: 0 0 20px;
+    }
+}
+
+@media only screen and (max-width: 450px)
+{
+    .text h1 {
+        font-size: 1.95rem;
+        margin-bottom: 75px;
+        padding: 15px 10px;
+    }
+
+    .text p {
+        font-size: 0.9rem;
+        width: 84%;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        margin: 0rem 2rem;
+        margin-top: 5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .image img {
+        height: 24.55rem;
+        width: 16.55rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 2rem;
+    }
+
+    .card1, .card2 {
+        padding: 6px 5px;
+    }
+
+    .cards h1 {
+        font-size: 1.4rem;
+        margin: 3.55rem 0rem;
+        color: rgb(201 18 18);
+    }
+
+    .card2 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .cards p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .gallery h2 {
+        font-size: 1.55rem;
+        text-align: center;
+        padding: 28px 0px;
+    }
+
+    .gallery {
+        background-color: white;
+        padding: 40px 0px;
+        padding-bottom: 0px;
+    }
+
+    .subscription h2 {
+        font-size: 1.55rem;
+        text-align: center;
+        padding: 28px 0px;
+    }
+
+    .para {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0 10% 7rem;
+        line-height: 18px;
+    }
+
+    .last-content {
+        display: flex;
+        padding: 0px 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .last-card {
+        flex: 0 0 65%;
+        max-width: 65%;
+        margin-top: 30px;
+        margin-bottom: 75px;
+        background-color: #f0f0f0;
+        
+    }
+
+    .last-card img {
+        height: 230px;
+        width: 100%;
+    }
+
+    .last-card button {
+        padding: 6px 14px;
+        margin-top: 16px;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        font-family: 'IBM Plex Sans', sans-serif;
+        background-color: #cd0404;
+        color: white;
+    }
+
+    .center {
+        text-align: center;
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 380px)
+{
+    .text h1 {
+        font-size: 1.7rem;
+        margin-bottom: 75px;
+        padding: 15px;
+    }
+
+    .text p {
+        font-size: 0.85rem;
+        width: 95%;
+    }
+
+    .image img {
+        height: 22.55rem;
+        width: 15.55rem;
+    }
+
+    .cards h1 {
+        font-size: 1.2rem;
+        margin: 3rem 0rem;
+        color: rgb(201 18 18);
+    }
+
+    .cards p {
+        font-size: 0.82rem;
+        text-align: justify;
+    }
+
+    .last-card {
+        flex: 0 0 67%;
+        max-width: 67%;
+        margin-top: 30px;
+        margin-bottom: 75px;
+        background-color: #f0f0f0;
+    }
+
+    .last-card img {
+        height: 220px;
+        width: 100%;
+    }
+
+    .last-card img {
+        height: 212px;
+        width: 100%;
+    }
+
+    .last-card .price {
+        background-color: rgb(205, 4, 4);
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-right: 20px;
+        font-size: 0.9rem;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 2px solid rgb(201 18 18);
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    .scroll-up {
+        position: relative;
+        bottom: -45px;
+        left: 47.35%;
+        width: 25px;
+        height: 38px;
+        border: 1px solid black;
+        display: block;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #cd0404;
+    }
+
+}
+
+@media only screen and (max-width: 340px)
+{
+    #logo img {
+        height: 30px;
+        display: block;
+        margin: auto;
+        width: 40px;
+    }
+
+    .name {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 1.35rem;
+        margin-bottom: 75px;
+        padding: 15px 0px;
+    }
+
+    .text p {
+        font-size: 0.75rem;
+        width: 90%;
+    }
+
+    .image img {
+        height: 20.55rem;
+        width: 13.55rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .cards h1 {
+        font-size: 1.02rem;
+        margin: 3rem 0rem;
+        color: rgb(201 18 18);
+    }
+
+    .cards p {
+        font-size: 0.75rem;
+        text-align: justify;
+    }
+
+    .gallery h2 {
+        font-size: 1.45rem;
+        text-align: center;
+        padding: 28px 0px;
+    }
+
+    .subscription h2 {
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 28px 0px;
+    }
+
+    .para {
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 0 10% 7rem;
+        line-height: 18px;
+    }
+
+    .last-card button {
+        padding: 7px 16px;
+        margin-top: 16px;
+        margin-bottom: 10px;
+        font-size: 0.8rem;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        font-family: 'IBM Plex Sans', sans-serif;
+        background-color: #cd0404;
+        color: white;
+    }
+
+    .last-card img {
+        height: 172px;
+        width: 100%;
+    }
+
+    .center {
+        text-align: center;
+        font-size: 0.64rem;
+    }
+
+    .scroll-down {
+        position: absolute;
+        bottom: 50px;
+        left: 47.35%;
+        width: 25px;
+        height: 38px;
+        border: 1px solid white;
+        display: block;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .scroll-up {
+        position: relative;
+        bottom: -45px;
+        left: 47.35%;
+        width: 25px;
+        height: 38px;
+        border: 1px solid black;
+        display: block;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #cd0404;
+    }
+}
+
+@media only screen and  (min-width: 1900px){
+    .text h1 {
+        font-size: 4.55rem;
+        margin-bottom: 142px;
+    }
+
+    .text p {
+        font-size: 2.3rem;
+        width: 70%;
+    }
+
+    .last-card img {
+        height: 550px;
+        width: 100%;
+    }
+
+    .last-card .price {
+        background-color: rgb(205, 4, 4);
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    .last-card button {
+        padding: 14px 27px;
+        margin-top: 16px;
+        margin-bottom: 10px;
+        font-size: 1.85rem;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        font-family: 'IBM Plex Sans', sans-serif;
+        background-color: #cd0404;
+        color: white;
+    }
+
+    .cards h1 {
+        font-size: 3rem;
+        margin: 1.5rem 0rem;
+        color: rgb(201 18 18);
+    }
+
+    .cards p {
+        font-size: 1.85rem;
+        text-align: justify;
+    }
+
+    .btn {
+        padding: 12px 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-right: 25px;
+        font-size: 1.85rem;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 2px solid rgb(201 18 18);
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    .para {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 20% 7rem;
+        line-height: 38px;
+    }
+    
+    .last-card .last-text h3 {
+        font-size: 1.85rem;
+        padding: 0 0 20px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+
+    #logo img {
+        height: 60px;
+        display: block;
+        margin: auto;
+        width: 73px;
+    }
+
+    .name {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+
+    .social img {
+        height: 30px;
+        width: 40px;
+        margin-left: 18px;
+    }
+
+    p {
+        font-size: 1.45rem;
+        text-align: center;
+        padding: 0 0 0.2rem;
+    }
+
+    .center {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1320px){
+    .text h1 {
+        font-size: 3rem;
+        margin-bottom: 80px;
+        padding: 0px 50px;
+    }
+
+    .text p {
+        font-size: 1.6rem;
+        width: 70%;
+    }
+
+    .para {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0 10% 7rem;
+        line-height: 25px;
+    }
+}
+

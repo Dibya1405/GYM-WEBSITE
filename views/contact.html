@@ -1,0 +1,110 @@
+<!-- CONTACT PAGE -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <title>DM-FITNESS.com</title>
+</head>
+
+<body>
+
+    <!-- header starts.. -->
+    <header class="h-nav" id="head">
+        <div id="logo">
+            <img class="invert" src="../static/images/logo1.jpg" alt="LOGO">
+            <div class="name">DM <span>FITNESS</span></div>
+        </div>
+        <nav class="navbar v-class" id="navbar">
+            <ul>
+                <li><a href="/home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li><a href="/about"><i class="fa fa-file-text-o" aria-hidden="true"></i>About</a></li>
+                <li><a href="/services"><i class="fa fa-cogs" aria-hidden="true"></i>Services</a></li>
+                <li><a class="active" href="/contact"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social v-class" id="social">
+            <a target="_blank" href="#"><img class="invert" src="../static/images/facebook.jpg" alt="F"></a>
+            <a target="_blank" href="#"><img class="invert" src="../static/images/twitter.png" alt="T"></a>
+            <a target="_blank" href="#"><img src="../static/images/insta.png" alt="I"></a>
+            <a target="_blank" href="#"><img src="../static/images/g.jpg" alt="G"></a>
+        </div>
+        <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <!-- header ends -->
+
+
+
+    <!-- main-section starts -->
+    <section class="main-section">
+        <div class="mainbody">
+            <h1>JOIN THE <span>WORLD</span> OF <span>FITNESS</span></h1>
+            <form action="/contact" method="post" class="myForm" id="form">
+                <input class="form-input" type="text" name="myname" id="name" placeholder="Enter your name" required>
+                <input class="form-input" type="number" name="myage" id="age" placeholder="Enter your age" required>
+                <input class="form-input" type="number" name="myphonenumber" id="phone"
+                    placeholder="Enter your mobile number" required>
+                <input class="form-input" type="email" name="myemail" id="email" placeholder="Enter your email id"
+                    required>
+                <input class="form-input" type="text" name="mygender" id="gender" placeholder="Enter your gender"
+                    required>
+                <input class="form-input" type="text" name="mylocality" id="address" placeholder="Enter your address"
+                    required>
+                <textarea class="form-input" name="text" id="text" cols="30" rows="10"
+                    placeholder="The reason for joinning the gym" required></textarea>
+                <button class="btn" id="btn">Submit Now</button>
+            </form>
+        </div>
+        <div class="side-body">
+            <h2>GET <span>CONNECTED</span> WITH <span>US</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quam, totam mollitia quasi debitis
+                doloremque provident earum quibusdam placeat ad saepe repellat ipsum, porro perferendis voluptates sequi
+                eius voluptatibus unde maxime possimus blanditiis? Vero facere optio dignissimos, nisi nesciunt id!</p>
+            <div class="basic-info">
+                <ul>
+                    <li><span class="fa fa-map-marker"></span>DELHI, BANGALORE, PUNE, KOLKATA, MUMBAI, CHANDIGARH</li>
+                    <li><span class="fa fa-phone"></span><a href="tel:+918777777712" id="call-us">+91-87777 77712</a>
+                    </li>
+                    <li><span class="fa fa-envelope"></span><a href="mailto:info@dmfitness.co.in"
+                            id="mail-us">info@dmfitness.co.in</a></li>
+                </ul>
+            </div>
+            <div class="media">
+                <a href="#"><span class="fa fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-twitter"></span></a>
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-youtube-play"></span></a>
+            </div>
+        </div>
+    </section>
+    <!-- main-section ends -->
+
+    <!-- footer starts -->
+    <footer>
+        <div class="center">
+            Copyright &copy; www.DM-FITNESS.com. All rights reserved!
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+
+    <script src="../static/js/contact.js"></script>
+
+
+</body>
+
+</html>
