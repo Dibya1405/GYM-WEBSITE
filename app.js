@@ -30,29 +30,45 @@ app.use(express.urlencoded())
 
 // END-POINTS...
 app.get('/', (req, res)=>{
-    res.status(200).sendFile(path.join(__dirname+'/views/index.html'));
+    res.status(200).sendFile(path.join(__dirname+'/index.html'));
 })
 
 app.get('/index', (req, res)=>{
-    res.status(200).sendFile(path.join(__dirname+'/views/index.html'));
+    res.status(200).sendFile(path.join(__dirname+'/index.html'));
+})
+
+app.get('/index.html', (req, res)=>{
+    res.status(200).sendFile(path.join(__dirname+'/index.html'));
 })
 
 app.get('/about', (req, res)=>{
-    res.status(200).sendFile(path.join(__dirname+'/views/about.html'));
+    res.status(200).sendFile(path.join(__dirname+'/about.html'));
+})
+
+app.get('/about.html', (req, res)=>{
+    res.status(200).sendFile(path.join(__dirname+'/about.html'));
 })
 
 app.get('/services', (req, res)=>{
-    res.status(200).sendFile(path.join(__dirname+'/views/services.html'));
+    res.status(200).sendFile(path.join(__dirname+'/services.html'));
+})
+
+app.get('/services.html', (req, res)=>{
+    res.status(200).sendFile(path.join(__dirname+'/services.html'));
 })
 
 app.get('/contact', (req, res)=>{
-    res.status(200).sendFile(path.join(__dirname+'/views/contact.html'));
+    res.status(200).sendFile(path.join(__dirname+'/contact.html'));
 })
 
-app.post('/contact', (req, res)=>{
+app.get('/contact.html', (req, res)=>{
+    res.status(200).sendFile(path.join(__dirname+'/contact.html'));
+})
+
+app.post('/contact.html', (req, res)=>{
     var myData = new Contact(req.body);
     myData.save().then(()=>{
-        res.status(200).sendFile(path.join(__dirname+'/views/contact.html'));
+        res.status(200).sendFile(path.join(__dirname+'/contact.html'));
     }).catch(()=>{
         res.status(400).send("Oops!! Something went wrong. Please try again after some time.")
     });
