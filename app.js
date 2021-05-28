@@ -33,7 +33,7 @@ app.get('/', (req, res)=>{
     res.status(200).sendFile(path.join(__dirname+'/index.html'));
 })
 
-app.get('/index', (req, res)=>{
+app.get('/home', (req, res)=>{
     res.status(200).sendFile(path.join(__dirname+'/index.html'));
 })
 
