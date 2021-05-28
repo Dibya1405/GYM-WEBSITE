@@ -30,11 +30,11 @@ app.use(express.urlencoded())
 
 // END-POINTS...
 app.get('/', (req, res)=>{
-    res.status(200).sendFile(path.join(__dirname+'/views/home.html'));
+    res.status(200).sendFile(path.join(__dirname+'/views/index.html'));
 })
 
-app.get('/home', (req, res)=>{
-    res.status(200).sendFile(path.join(__dirname+'/views/home.html'));
+app.get('/index', (req, res)=>{
+    res.status(200).sendFile(path.join(__dirname+'/views/index.html'));
 })
 
 app.get('/about', (req, res)=>{
